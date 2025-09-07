@@ -6,18 +6,27 @@
     <title>NAZOTECH</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- nav bar section -->
     <header class="navbar-head hero">
     <div class="container">
         <h3 class="logo">NAZOTECH</h3>
+        
+<input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+         <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+
         <nav class="nav" >
             <ul class="nav-links">
                 <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
-                <li><a href="">Technicians</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -42,17 +51,20 @@
         <h2 id="xx">At NAZOTECH We Specialize In Your Auto Satisfaction</h2>
         <div class="services container">
             <div class="service-box">
-                <div class="box">
+                <div class="box maintenance" data-aos="fade-up"
+     data-aos-duration="3000">
                    <h3>Auto Maintenance</h3><hr>
                    <p>We provide routine maintenance services to help extend the life of 
       your vehicle and ensures it performs at its best.</p> 
                 </div>
-                <div class="box">
+                <div class="box detail" data-aos="fade-up"
+     data-aos-duration="3000">
                     <h3>Auto Detailing</h3><hr>
                     <p> Our detailing services restore your car's shine inside and out.</p>
 
                 </div>
-                <div class="box">
+                <div class="box spare" data-aos="fade-up"
+     data-aos-duration="3000">
                     <h3>Car & Spare Parts Sales</h3><hr>
                     <p>We stock high-quality spare parts and accessories for all types of vehicles. </p>
                 </div>
@@ -60,12 +72,12 @@
         </div>
       </section>
       <!-- expert section -->
-       <section class="expert container">
+       <section class="expert container" data-aos="fade-up"
+     data-aos-duration="3000">
+        
         <div id="u"><h2 >Meet Our Technicians</h2><hr id="v" >
         <p>Our team of certified technicians combines years of hands-on experience with 
     the latest automotive technology to keep your vehicle in top condition. </p></div>
-        <div class="expert-content">
-           <div class="expert-image"><img src="./people-5525901_640.png" id="eximage" alt="photo of a car technician"></div>
            <div class="expert-list">
             <h3 id="ex">Most Trusted In Our Field</h3>
             <ul>
@@ -74,27 +86,27 @@
                 <li><i class="fas fa-stopwatch"></i> Quick Service with Quality Results</li>
             </ul>
             </div>
-        </div>
+    
        </section>
        <!-- impression section -->
         <section class="impression container">
             <h2 id="yy">See Our Impression</h2>
             <div class="impression-boxes">
-                 <div class="boxes">
-        <img src="./engine.jpg" id="x" alt="Engine Repair">
-        <h3>Engine Diagnostics</h3>
+                 <div class="boxes engine" data-aos="zoom-in">
+        
+        <h3>Engine Diagnostics</h3><hr>
         <p>We use advanced technology to detect and fix engine problems efficiently.</p>
       </div>
 
-      <div class="boxes">
-        <img src="./brake-disc-1749633_1280.jpg" id="y" alt="Brake Service">
-        <h3>Brake Service</h3>
+      <div class="boxes brake" data-aos="zoom-in">
+        
+        <h3>Brake Service</h3><hr>
         <p>Ensuring your vehicle's braking system is safe, smooth, and reliable.</p>
       </div>
 
-      <div class="boxes">
-        <img src="./oil-3964367_1280.jpg" id="z" alt="Oil Change">
-        <h3>Oil & Filter Change</h3>
+      <div class="boxes oil" data-aos="zoom-in" >
+        
+        <h3>Oil & Filter Change</h3><hr>
         <p>Regular oil changes keep your car running smoothly and extend engine life.</p>
       </div>
             </div>
@@ -103,7 +115,8 @@
          <section class="pricing section">
             <div class="pricing-container">
                 <h2>Pricing</h2>
-                <div class="pricing-cards">
+                <div class="pricing-cards" data-aos="fade-up"
+     data-aos-duration="3000">
                 <div class="card">
                     <h3>Free</h3>
           <p>$0 / month</p>
@@ -145,6 +158,9 @@
             <p>&copy;2025 NAZOTECH.All Rights Reserved.</p>
          </footer>
 
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -46,6 +46,7 @@ body{
     color: white;
     font-weight: bold;
     transition: color 0.2s ;
+    
 }
 .nav-links a:hover{
     color: blue;
@@ -58,7 +59,9 @@ body{
     color: white;
     text-decoration: none;
     border-radius: 5px;
+   
 }
+
 .button:hover{
     background: #011222;
 }
@@ -81,7 +84,7 @@ border-radius: 5px;
     padding: 50px 0;
     background-image: url(./spanner.jpg);
     background-repeat: no-repeat;
-   
+   opacity: 0.5;
     background-attachment: scroll;
     background-size: cover;
     padding-top: 0; 
@@ -105,7 +108,7 @@ p{
 .navc{
     
     margin:0px ;
-    width: 133;
+    width: 133px;
 height: 52;
 opacity: 1;
 padding-top: 15px;
@@ -136,47 +139,56 @@ display: inline-block;
 .service-box .box{
     flex: 1;
     padding: 20px;
-    background: black;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
 }
+.detail{
+    background-image: url(./car-wash-3960877_640.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.maintenance{
+    background-image: url(./car-mechanic-6260377_640.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.spare{
+     background-image: url(./transmission-3652852_640.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 /* expert */
 #u{
-text-align: center;
+text-align: centr;
 }
 #v{
-     width: 300px;
+     width: 200px;
   margin: 10px auto;
 }
 .expert{
-    padding: 50px 0;
+    padding: 20px;
     color: white;
-     background-color: black;
+     background-image: url(./technician.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
      border-radius: 10px;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
+    text-align: center;
     
 }
-.expert-content{
-    display: flex;
-    justify-content: space-between;
-}
-#eximage{
-    width: 2500;
-height: 2500;
-opacity: 1;
-gap: 35px;
 
-}  
 .expert-list{
-    width: 418;
-height: 460;
-opacity: 1;
-gap: 5px;
-padding: 5px;
+  display: block;
+  text-align: center;
 } 
-#ex{
-     margin-bottom: 15px;
-}
+
 ul li{
     list-style: none;
     margin-bottom: 40px;   
@@ -204,9 +216,35 @@ margin-top: 15px;
 
 }
 .boxes{
+    padding: 20px;
+    height: 300px;
+    flex: 6;
     border-radius: 10px;
 background-color: black;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
+}
+hr{
+    width: 300px;
+     margin: 10px auto;
+    
+}
+.engine{
+    background-image: url(./engine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.brake{
+     background-image: url(./brake-disc-1749633_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.oil{
+      background-image: url(./oil-3964367_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.;
 }
 #yy{
     display: inline-block;   
@@ -225,32 +263,31 @@ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
 }
 .pricing-cards{
     display: flex;
-   justify-content: center;
+   justify-content: space-between;
    gap: 30px;
    margin-top: 30px;
 }
 .card{
-    width: 328px;
+   
 height: 937px;
-opacity: 1;
+width: 500px;
 background: white;
-padding: 20px;
+padding: 10px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
 border-radius: 10px;
 }
 .card h3{
     
-    padding-top: 50px;
+    padding-top: 20px;
     font-weight: bold;
     font-size: larger;
 }
 .card>p{
-    padding-top: 150px;
+    padding-top: 20px;
 }
 .free,.standard,.premium{
     background: orange;
-    width: 243;
-height: 52;
+height: 52p;
 opacity: 1;
 padding-top: 15px;
 padding-right: 40px;
@@ -282,3 +319,147 @@ footer{
     color: white;
     font-weight: bold;
 }
+
+    
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.nav-links:hover {
+    color: black;}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* HIDE THE CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+
+@media  (max-width: 1024px) {
+  .nav-links,
+  .navb {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background:#011222;
+    position: absolute;
+    top: 60px;
+    right:0;
+    width: 200px;
+    padding: 20px;
+    border-radius:10px ;
+    z-index: 2;
+  }
+  hr{
+     width: 200px;
+  margin: 10px auto;
+  }
+  
+
+  /* Show nav when checked */
+  #menu-toggle:checked ~ .nav .nav-links,
+  #menu-toggle:checked ~ .navb {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-head .container {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .hero{
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+  
+  }
+  .navc{
+font-size: 0.9em;
+border-radius: 20px;
+  }
+.free{
+    display: inline-block;
+    height: 30px;
+    padding: 0;
+   
+} 
+.premium{
+    display: inline-block;
+    height: 40px;
+    padding: 0;
+    
+}
+.standard{
+     display: inline-block;
+    height: 40px;
+    padding: 0;
+   
+}
+.service-box{
+ 
+    display: block;
+   
+}
+.expert{
+    width: 100;
+    
+    font-size:0.9rem;
+ 
+    
+}
+.expert-image{
+    display: non
+}
+.expert-list{
+    text-align: center;
+    
+
+}
+.impression-boxes{
+    display: block;
+    
+}
+.boxes{
+    height:250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+.box{
+    margin-bottom:30px ;
+}
+.card{
+    height: 500px;
+    margin-bottom: 30px;
+    opacity:0.;
+    width: 100%;
+    
+}
+.pricing-cards{
+    display: block;
+}
+
+  #xx{
+display: inline-block;
+align-items: center;
+justify-content: center;
+width: 100%;
+font-size: 1.2rem;
+  }
+}
+
